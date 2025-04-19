@@ -27,3 +27,9 @@ for i in range(1, 11):
     for j in range(1,11):
         print(f"{i}*{j}={i*j} ", end="\t")
     print(" ")
+
+#make a list of devops tools and print all one-by-one , using loop-
+devops_course=['linux','scripting', 'networking ', 'aws', 'git & github', 'jenkins', 'gitlab', 'docker', 'terraform', 'kubernetes', 'ansible']
+for i in devops_course:
+    print(i, end=" , ")
+
