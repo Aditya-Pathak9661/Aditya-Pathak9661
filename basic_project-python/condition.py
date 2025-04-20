@@ -35,3 +35,12 @@ while True:
     else:
         print(f"Congratulations! You guessed the number in {attempts} attempts.")
         break
+#check odd /even
+num = int(input("enter the value of num:"))
+if ((num%2 == 0) & (num > 0)):
+    print("the number is even")
+else:
+    if (num > 0):
+        print("number is odd.")
+    else:
+        print("negative number.")
