@@ -1,0 +1,40 @@
+1. make a dir/folder - mkdir <dir_name>
+use -p flag to make a sub dir in exist/non-exist directory.
+eg:- mkdir -p my_dir/dist
+
+#error - mkdir mycontent/src
+
+2. to chande/go to existing directory - cd <dir_name>
+3. to clear screen after some many commands- clear
+4, to open a list of dir/dir_file/folder- ls
+use flag to -
+	-a -for hidden dir/file
+	-lh - to know size of dir/files
+	-l - to know details
+you can use multiple flag together.
+
+5. to know current working dir - pwd
+6. to create a file - touch
+7. to delete a file- rm
+for dir - use flag = -p
+	eg;- rm -r my_dir/file
+
+8.to concatenate and display file content - cat <file_name>
+9. to display login user - whoami
+10. how many user login - who
+11. copy file- cp <source_path> <destination_path>
+
+12. move file- mv <file_name> <destination_place>
+13. rename file - mv <file_name> <new_name>
+14. word count - wc <file_name>
+15. cut a byte in a file content - cut -b <start_byte> <last_byte> <file_name>
+16. to show content/messsage and put in file - tee
+eg;- echo "message" | tee <file_name>
+17. to sort - sort <file-name>
+
+# hardlink and softlink -
+make a hardlink flie , which wouldn't affect after delete/move from original folder , but softlink file is affected.
+> it help to in backup
+eg:- ln <original_file> harlink_file
+eg:- ln -s <original_file> softline_file
+

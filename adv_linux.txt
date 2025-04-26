@@ -1,0 +1,66 @@
+#advance linux command
+
+1. login in aws ec2 instance using command  -
+ssh command
+
+to connect -
+a. download (.pem file)
+b. chmod 7oo <file.pem>
+c, shh -i <file.prm> ubuntu@<ip_address> 
+	yes
+
+2. nohup - it make a sanpshot of file information in nohup.out
+
+3. vmstat - it show active ram usage/info
+
+# user& file managemnt:-
+a. uname - os info
+b. uptime - starting time of instance
+c. date - current date/time
+d. who - how many user login
+e, whoami - current user's name
+f. which - version of application
+g. sudo - super user do (work as root usr)
+h. shutdown - to stop instance
+i. reboot - restart system 
+j. apt - application package manager
+
+# user & group management-
+a. to add user - sudo useradd -m <user_name>
+b. to set password - sudo passwd <user_name>
+c. to switch user - su
+d. to exit - exit
+e. to delete user - sudo userdel <user_name>
+f. to add many user - sudo useradd <users_name>
+
+# group -
+a. to add group - sudo groupadd <group_name>
+b. to check group list - cat /etc/group
+c. to add user in group - sudo gpasswd -a <user_name> <group_name>
+ for many user - sudo gpasswd -M <users_name> <group_name>
+
+#file permission -
+a. to permission - chmod <user><operator><permission><file_name>
+#symbolic -
+#user -	u - user
+	g - group
+	o - other
+	a - all users
+#operator -
+	a. + - add
+	b - - remove
+	c. = - remove all and only this
+#permission - 
+	a. 'r' - read
+	b. 'w' - write
+	c. 'x' - execute
+eg :- chmod u+r <file_name>
+
+# numerical -
+use 1 to 7 for permission of user and all .
+eg:- chmod 777 <file_name>
+
+b. chown - to change user
+c. chgrp - to change group
+
+
